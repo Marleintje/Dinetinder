@@ -6,8 +6,8 @@ This 3-person group project contains a React App and was created in the 4th week
 
 To view this project in a browser:
 - Clone the project
-- Run **yarn install** or **npm install** in root folder of the project
-- Run **npm start** or **yarn start** to run the app in the development mode.<br>
+- Run **yarn install** or **npm install** in the root folder of the project
+- Run **yarn start** or **npm start** to run the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Project structure
@@ -21,6 +21,6 @@ Instead, dummy-data has been saved in `src/reducers/reducer`. This dummy-data is
 An example on how user input is handled:
 
 - When a profile is created, the user clicks on *Cooking dinner* and adds information. The information is saved in the component's local state by means of controlled components (`src/components/CookingContainer`);
-- User clicks *Submit*. An action is fired with the user's information as an argument(`src/components/CookingContainer`);
+- User clicks *Submit*. An action is fired with the user's information as an argument (`src/components/CookingContainer`);
 - The action is dispatched with a shallow copy of the user's input as payload (`src/actions/user` --> addUser);
 - The reducer 'reducer' catches the *addUser* action and concatenates the new user information with the existing array of users (`src/reducers/reducer`).
